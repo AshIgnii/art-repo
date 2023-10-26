@@ -1,0 +1,198 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+
+  background-color: rgb(19, 4, 26);
+}
+
+head {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+
+  background-color: #1d0b2c;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+
+  margin-top: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: #1d0b2c;
+
+  font-family: "Segoe UI";
+  font-size: x-large;
+  text-align: center;
+  color: black;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.titlesDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  column-gap: 1%;
+
+  white-space: nowrap;
+
+  margin: 0;
+  padding-bottom: 1%;
+
+  font-family: "Segoe UI";
+  font-size: x-large;
+
+  text-shadow: 1px 0 #6a1f8d, -1px 0 #6a1f8d, 0 1px #6a1f8d, 0 -1px #6a1f8d,
+    1px 1px #6a1f8d, -1px -1px #6a1f8d, 1px -1px #6a1f8d, -1px 1px #6a1f8d;
+}
+
+.icon {
+  margin-top: 2%;
+  margin-left: 2%;
+
+  grid-column:  1;
+  grid-row: 1;
+
+  border-radius: 80%;
+
+  width: 100px;
+  height: 100px;
+
+  background-color: white;
+}
+
+.titles {
+  margin: 0;
+  padding-top: 50px;
+
+  height: 100px;
+  width: 500px;
+}
+
+.albumBut {
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15%;
+  border-color: #6a1f8d;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  height: 100px;
+
+  color: black;
+  background-color: #6a1f8d;
+  margin-top: 38px;
+  margin-left: auto;
+  margin-right: 50px;
+
+  font-family: "Segoe UI";
+  font-size: xxx-large;
+
+  text-decoration:none;
+
+  animation: buttonShrink 0.5s
+}
+
+.albumBut:hover {
+  background-color: white;
+  border-color: white;
+
+  animation: buttonGrow 0.5s;
+  transform: scale(110%);
+
+  text-shadow: 1px 0 #ffffff, -1px 0 #ffffff, 0 1px #ffffff, 0 -1px #ffffff,
+    1px 1px #ffffff, -1px -1px #ffffff, 1px -1px #ffffff, -1px 1px #ffffff;
+}
+
+.bioSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  column-gap: 1%;
+
+  margin: 0;
+  padding-bottom: 1%;
+}
+
+.circle {
+  background-color: white;
+  color: white;
+
+  height: 900px;
+  width: 800px;
+
+  border-radius: 50% 0 0 50%;
+  border-style: groove;
+  border-width: 10px;
+  border-color: rgb(94, 16, 131);
+
+  margin-left: auto;
+  margin-right: -20px;
+  margin-top: 2%;
+}
+
+.mainImg {
+  padding-left: 15%;
+  padding-top: 10%;
+
+  object-fit: none;
+}
+
+.bioTitleDiv {
+  padding-left: 5%;
+}
+
+.titlesBio {
+  color: #ffffff;
+
+  font-family: "Segoe UI";
+  font-size: xxx-large;
+  font-weight: 300;
+
+  text-shadow: 2px 0 rgb(94, 16, 131), -2px 0 rgb(94, 16, 131),
+    0 2px rgb(94, 16, 131), 0 -2px rgb(94, 16, 131),
+    2px 2px rgb(94, 16, 131), -2px -2px rgb(94, 16, 131),
+    2px -2px rgb(94, 16, 131), -2px 2px rgb(94, 16, 131);
+}
+
+.bioP {
+  color: white;
+
+  font-family: "Segoe UI";
+  font-weight: 300;
+
+  width: 400px;
+}
+
+@keyframes buttonShrink {
+    0% {transform: scale(110%);}
+    100% {transform: scale(100%);}
+}
+
+@keyframes buttonGrow {
+  0% {transform: scale(100%);}
+    100% {transform: scale(110%);}
+}
